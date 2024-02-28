@@ -1,5 +1,5 @@
 # 使用Node.js 18基础镜像
-FROM node:18
+FROM registry.cn-hangzhou.aliyuncs.com/library/node:18
 
 # 更新软件包列表并安装git
 RUN apt-get update && apt-get install -y git
