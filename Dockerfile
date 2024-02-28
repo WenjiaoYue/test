@@ -1,3 +1,6 @@
+ARG http_proxy=http://child-jf.intel.com:912
+ARG https_proxy=http://child-jf.intel.com:912
+
 # 使用Node.js 18基础镜像
 FROM registry.cn-hangzhou.aliyuncs.com/library/node:18
 
