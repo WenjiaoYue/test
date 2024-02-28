@@ -1,8 +1,8 @@
-ARG http_proxy=http://child-jf.intel.com:912
-ARG https_proxy=http://child-jf.intel.com:912
+ENV http_proxy=http://child-jf.intel.com:912
+ENV https_proxy=http://child-jf.intel.com:912
 
 # 使用Node.js 18基础镜像
-FROM registry.cn-hangzhou.aliyuncs.com/library/node:18
+FROM node:18
 
 # 更新软件包列表并安装git
 RUN apt-get update && apt-get install -y git
